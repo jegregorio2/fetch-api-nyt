@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- If IE use the latest rendering engine -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<!-- Set the page to the width of the device and set the zoom level -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>New York Times - Fetch API</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/script.js"></script> 
+	<script src="js/moment.js"></script> 	
+</head>
+<body>
+	<div id="pagewrapper">
+		<section>
+			<header>
+				<a href="#"><h1>Top New York Times Headlines</h1></a>
+				<h3>Brought to you by the students of CTEC 228</h3>
+				<div>
+					<label for="section">Section
+						<select name="section" id="section">
+							<option value="-">--Select--</option>
+							<option value="home">Home</option>
+							<option value="arts">Arts</option>
+                        	<option value="business">Business</option> 
+                        	<option value="dining">Dining</option> 
+                        	<option value="fashion">Fashion</option>
+                        	<option value="health">Health</option>
+                        	<option value="magazine">Magazine</option> 
+                        	<option value="national">National</option> 
+                        	<option value="nyregion">NY Region</option> 
+                        	<option value="opinion">Opinion</option>
+                        	<option value="politics">Politics</option>
+                        	<option value="realestate">Real Estate</option>
+                        	<option value="science">Science</option> 
+                        	<option value="sports">Sports</option> 
+                        	<option value="technology">Technology</option> 
+                        	<option value="travel">Travel</option>
+                        	<option value="world">World</option>     
+						</select> 
+						<button id="refresh">Refresh</button>
+						<div id="message"></div>
+					</label>
+				</div> 
+			</header>
+		</section>
+		<div id="stories"></div>
+	</div>
+	<footer>
+		<p>Copyright &copy; 2020 by Juan E. Gregorio</p>
+	</footer>
+</body>
+</html>
